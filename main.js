@@ -53,7 +53,7 @@ function markOnDisc(inId, inTable, inCells, inRow)
 {
     clearElem(inTable, inCells, inRow);
 
-    var removeFromDiskLink = createLink(' [ Nicht Lokal ] ');
+    var removeFromDiskLink = createLink(' [ ' + chrome.i18n.getMessage('actionRemoveLocal') + ' ] ');
     removeFromDiskLink.onclick = function() {
         var val = {};
         val[inId] = false;
@@ -74,7 +74,7 @@ function markNotOnDisc(inId, inTable, inCells, inRow)
 {
     clearElem(inTable, inCells, inRow);
 
-    var addToDiskLink = createLink(' [ Lokal ] ');
+    var addToDiskLink = createLink(' [ ' + chrome.i18n.getMessage('actionSetLocal') + ' ] ');
     addToDiskLink.onclick = function() {
         var val = {};
         val[inId] = true;

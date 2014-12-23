@@ -1,0 +1,18 @@
+{
+    "extName": {
+        "message": "Proxer.me Local Storage Indicator",
+        "description": "Extension name"
+    },
+    "extDescription": {
+        "message": "Diese Erweiterung kann speichern, ob eine Anime bereits lokal (auf HDD/CD/DVD) vorhanden ist oder nicht.",
+        "description": "Extension description"
+    },
+    "actionSetLocal": {
+        "message": "Lokal",
+        "description": "Aktion um Anime als local gespeichert zu markieren."
+    },
+    "actionRemoveLocation": {
+        "message": "Nicht Lokal",
+        "description": "Aktion um Anime nicht mehr als gespeichert zu markieren."
+    }
+}

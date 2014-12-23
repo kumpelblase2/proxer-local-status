@@ -1,0 +1,18 @@
+{
+    "extName": {
+        "message": "Proxer.me Local Storage Indicator",
+        "description": "Extension name"
+    },
+    "extDescription": {
+        "message": "This extension allows you to save which anime you have on your local disc or cd/dvd.",
+        "description": "Extension description"
+    },
+    "actionSetLocal": {
+        "message": "Local",
+        "description": "Action for setting anime stored locally"
+    },
+    "actionRemoveLocation": {
+        "message": "Not local",
+        "description": "Action for setting anime not longer stored locally"
+    }
+}
