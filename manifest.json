@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "Proxer.me Local storage indicator",
+    "description": "This extension allows you to save which anime you have on your local disc or cd/dvd.",
+    "version": "1.0",
+
+    "content_scripts": [
+        {
+            "run_at":     "document_start",
+            "matches":    ["http://proxer.me/*", "https://proxer.me/*"],
+            "js":         ["main.js"]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "http://proxer.me/*",
+        "storage"
+    ]
+}
