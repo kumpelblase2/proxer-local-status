@@ -1,4 +1,5 @@
 var WINDOW_REGEX = /ucp\?s=anime$/;
+var UCP_REGEX = /ucp((#top)?|(\?s=.+))$/;
 var ENTRY_REGEX = /entry\d+$/;
 var ID_REGEX = /Cover:(\d+)$/;
 
@@ -128,6 +129,28 @@ function applyToTable(inTable)
     }
 }
 
+function addObserver()
+{
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if(mutation.type === "childList")
+            {
+                if(mutation.addedNodes.length >= 1)
+                {
+                    var newNodes = mutation.addedNodes;
+                    for(var i = 0; i < newNodes.length; i++)
+                    {
+                        var node = newNodes[i];
+                        if(node.id === TABLES_ID)
+                            applyToTable(node);
+                    }
+                }
+            }
+        });
+    });
+    observer.observe(document.getElementById(MAIN_CONTENT_ID), { childList: true });
+}
+
 function apply()
 {
     if(!document.getElementById(TABLES_ID))
@@ -149,4 +172,8 @@ function apply()
 
 if(WINDOW_REGEX.test(window.location)){
     apply();
+}
+
+if(UCP_REGEX.test(window.location)) {
+    addObserver();
 }
