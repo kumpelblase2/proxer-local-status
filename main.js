@@ -133,7 +133,7 @@ function addObserver()
 {
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
-            if(mutation.type === "childList")
+            if(UCP_REGEX.test(window.location))
             {
                 if(mutation.addedNodes.length >= 1)
                 {
