@@ -20,7 +20,7 @@ In chrome go to `Settings` -> `Extensions`. Here enable `Developer mode` to enab
 
 Usage
 =====
-When you go to your anime list in your control panel and reload the page (reload might not be necessary but is advised), you should have a new column in the tables and a new action for your animes. ![Example](img/example.png)
+When you go to your anime list in your control panel and got to your `Animes` page, you should have a new column in the tables and a new action for your animes. ![Example](img/example.png)
 The leftmost indicator displays whether or not you have the anime on your disk.
 - `-` : Not on disk
 - `X` : On Disk
