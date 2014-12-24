@@ -11,7 +11,7 @@
         "message": "Local",
         "description": "Action for setting anime stored locally"
     },
-    "actionRemoveLocation": {
+    "actionRemoveLocal": {
         "message": "Not local",
         "description": "Action for setting anime not longer stored locally"
     }

@@ -11,7 +11,7 @@
         "message": "Lokal",
         "description": "Aktion um Anime als local gespeichert zu markieren."
     },
-    "actionRemoveLocation": {
+    "actionRemoveLocal": {
         "message": "Nicht Lokal",
         "description": "Aktion um Anime nicht mehr als gespeichert zu markieren."
     }
