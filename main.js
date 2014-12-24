@@ -174,6 +174,4 @@ if(WINDOW_REGEX.test(window.location)){
     apply();
 }
 
-if(UCP_REGEX.test(window.location)) {
-    addObserver();
-}
+addObserver();
