@@ -1,19 +1,3 @@
-function createButton(inLocal)
-{
-    var button = document.createElement('a');
-    button.className = 'menu ajaxLink';
-    button.style.display = 'block';
-    button.href = 'javascript:void(0);';
-    button.id = BUTTON_ID;
-    button.innerHTML = chrome.i18n.getMessage((inLocal ? 'actionRemoveLocal' : 'actionSetLocal'));
-    return button;
-}
-
-function insertAfter(inNewElement, inToAppend)
-{
-    inToAppend.parentNode.insertBefore(inNewElement, inToAppend.nextSibling);
-}
-
 function clearTable(inTable)
 {
     var action = document.getElementById(BUTTON_ID);

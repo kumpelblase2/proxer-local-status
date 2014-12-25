@@ -1,21 +1,3 @@
-function createMarker(inOnDisk)
-{
-    var onDiskMarker = document.createElement('td');
-    onDiskMarker.innerHTML = (inOnDisk ? 'X' : '-');
-    onDiskMarker.className += STATUS_CLASS;
-    return onDiskMarker;
-}
-
-function createLink(inText)
-{
-    var removeFromDiskLink = document.createElement('a');
-    removeFromDiskLink.innerHTML = inText;
-    removeFromDiskLink.href = 'javascript:void(0);';
-    removeFromDiskLink.text = inText;
-    removeFromDiskLink.className += LINK_CLASS;
-    return removeFromDiskLink;
-}
-
 function clearElem(inTable, inCells, inRow)
 {
     var marker = inCells[0];
