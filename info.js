@@ -1,22 +1,3 @@
-var DETAILS_REGEX = /info\/(\d+)(\/details)?(#top)?$/;
-
-var LAST_ACTION_ID = 'newComment';
-var MAIN_CONTENT_ID = 'main';
-var CONTENT_CLASS = 'hreview-aggregate';
-var CONTENT_TAG = 'SPAN';
-var BUTTON_ID = 'toggleLocal';
-
-function createStorageEntry(inId)
-{
-    var obj = {};
-    obj[inId] = false;
-    chrome.storage.sync.set(obj, function() {
-        if(chrome.runtime.lastError) {
-            alert('There was an error saving to storage: ' + runtime.lastError);
-        }
-    });
-}
-
 function createButton(inLocal)
 {
     var button = document.createElement('a');
@@ -43,7 +24,7 @@ function clearTable(inTable)
     }
 }
 
-function applyToTable(inInfoTable)
+function applyToInfoTable(inInfoTable)
 {
     clearTable(inInfoTable);
 
@@ -85,12 +66,12 @@ function applyInfo()
         var element = classElements[i];
         if(element.parentNode.id === MAIN_CONTENT_ID && element.nodeName === CONTENT_TAG)
         {
-            applyToTable(element.children[1]);
+            applyToInfoTable(element.children[1]);
         }
     }
 }
 
-function addObserver()
+function addObserverInfo()
 {
     var observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
@@ -103,14 +84,14 @@ function addObserver()
                     {
                         var node = newNodes[i];
                         if(node.className === CONTENT_CLASS && node.nodeName === CONTENT_TAG)
-                            applyToTable(node.children[1]);
-                        }
+                            applyToInfoTable(node.children[1]);
                     }
                 }
-            });
+            }
         });
-        observer.observe(document.getElementById(MAIN_CONTENT_ID), { childList: true });
-    }
+    });
+    observer.observe(document.getElementById(MAIN_CONTENT_ID), { childList: true });
+}
 
 
 
@@ -118,4 +99,4 @@ if(DETAILS_REGEX.test(window.location)){
     applyInfo();
 }
 
-addObserver();
+addObserverInfo();

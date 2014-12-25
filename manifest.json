@@ -9,7 +9,7 @@
     "content_scripts": [
         {
             "matches":    ["http://proxer.me/*", "https://proxer.me/*"],
-            "js":         ["listing.js", "info.js"]
+            "js":         ["common.js", "listing.js", "info.js"]
         }
     ],
     "permissions": [
