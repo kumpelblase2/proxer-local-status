@@ -6,7 +6,7 @@ A chrome extension for proxer.me to display whether or not you have an anime loc
 Features
 ========
 - Chrome Sync
-- Displays in anime list and on every anime page (TODO)
+- Displays in anime/manga list and on every anime/manga page
 - Easy toggle
 - EN / DE
 
@@ -30,5 +30,5 @@ On the right there's a new action: `[ Local ]` / `[ Not local ]` These actions a
 
 TODO
 ====
-- Display local status on info/details page
+- ~~Display local status on info/details page~~
 - Display local status on connections page

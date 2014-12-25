@@ -143,19 +143,19 @@ function addObserver()
                         var node = newNodes[i];
                         if(node.id === TABLES_ID)
                             applyToTable(node);
+                        }
                     }
                 }
-            }
+            });
         });
-    });
-    observer.observe(document.getElementById(MAIN_CONTENT_ID), { childList: true });
-}
+        observer.observe(document.getElementById(MAIN_CONTENT_ID), { childList: true });
+    }
 
-function apply()
+function applyList()
 {
     if(!document.getElementById(TABLES_ID))
     {
-        setTimeout(function() { apply(); }, 1000);
+        setTimeout(function() { applyList(); }, 1000);
         return;
     }
 
@@ -166,12 +166,12 @@ function apply()
         if(table.nodeName !== 'TABLE' || table.id !== TABLES_ID)
             continue;
 
-        applyToTable(table);
+            applyToTable(table);
     }
 }
 
 if(WINDOW_REGEX.test(window.location)){
-    apply();
+    applyList();
 }
 
 addObserver();
