@@ -26,3 +26,9 @@ The leftmost indicator displays whether or not you have the anime on your disk.
 - `X` : On Disk
 
 On the right there's a new action: `[ Local ]` / `[ Not local ]` These actions allow you to toggle whether or not you have it saved as local or not.
+
+
+TODO
+====
+- Display local status on info/details page
+- Display local status on connections page
