@@ -1,7 +1,7 @@
 proxer-local-status
 ===================
 
-A chrome extension for proxer.me to display whether or not you have an anime locally (hard drive / cd / dvd).
+A chrome extension for proxer.me to display whether or not you have an anime/manga locally (hard drive / cd / dvd).
 
 Features
 ========
@@ -20,7 +20,7 @@ In chrome go to `Settings` -> `Extensions`. Here enable `Developer mode` to enab
 
 Usage
 =====
-When you go to your anime list in your control panel and got to your `Animes` page, you should have a new column in the tables and a new action for your animes. ![Example](img/example.png)
+When you go to your anime list in your control panel and got to your `Animes` (or `Mangas`) page, you should have a new column in the tables and a new action for your animes/mangas. ![Example](img/example.png)
 The leftmost indicator displays whether or not you have the anime on your disk.
 - `-` : Not on disk
 - `X` : On Disk
