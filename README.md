@@ -10,13 +10,17 @@ Features
 - Easy toggle
 - EN / DE
 
-Installation
+Development
 ============
-To install this plugin simply clone this repository to anywhere you like
+Simply clone this repository to anywhere you like
 ```
 git clone https://github.com/kumpelblase2/proxer-local-status
 ```
-In chrome go to `Settings` -> `Extensions`. Here enable `Developer mode` to enable loading of unpackaged extensions. Note this won't be necessary in the future, but since this is still in development it is necessary. Then click on `Load unpackaged extension` and select the folder of the repository.
+In chrome go to `Settings` -> `Extensions`. Here enable `Developer mode` to enable loading of unpackaged extensions. Then click on `Load unpackaged extension` and select the folder of the repository.
+
+Installation
+============
+Download one of the relases from the [release page](https://github.com/kumpelblase2/proxer-local-status/releases). Then go to `Settings` -> `Extensions` and drag the downloaded file into the window.
 
 Usage
 =====
