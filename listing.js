@@ -103,13 +103,13 @@ function addObserverList()
                         var node = newNodes[i];
                         if(node.id === TABLES_ID)
                             applyToTable(node);
-                        }
                     }
                 }
-            });
+            }
         });
-        observer.observe(document.getElementById(MAIN_CONTENT_ID), { childList: true });
-    }
+    });
+    observer.observe(document.getElementById(MAIN_CONTENT_ID), { childList: true });
+}
 
 function applyList()
 {
@@ -126,7 +126,7 @@ function applyList()
         if(table.nodeName !== 'TABLE' || table.id !== TABLES_ID)
             continue;
 
-            applyToTable(table);
+        applyToTable(table);
     }
 }
 
