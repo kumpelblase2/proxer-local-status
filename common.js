@@ -1,5 +1,5 @@
 var DETAILS_REGEX = /info\/(\d+)(\/details)?(#top)?$/;
-var WINDOW_REGEX = /ucp\?s=anime$/;
+var WINDOW_REGEX = /ucp\?s=(anime|manga)$/;
 var UCP_REGEX = /ucp((#top)?|(\?s=.+))$/;
 var ENTRY_REGEX = /entry\d+$/;
 var ID_REGEX = /Cover:(\d+)$/;
