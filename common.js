@@ -4,7 +4,7 @@ var UCP_REGEX = /ucp((#top)?|(\?s=.+))$/;
 var ENTRY_REGEX = /entry\d+$/;
 var ID_REGEX = /Cover:(\d+)$/;
 
-var MAIN_CONTENT_ID = 'main';
+var MAIN_CONTENT_ID = 'accordion';
 var TABLES_ID = 'box-table-a';
 var LAST_ACTION_ID = 'newComment';
 var CONTENT_CLASS = 'hreview-aggregate';
