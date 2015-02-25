@@ -101,8 +101,14 @@ function addObserverList()
                     for(var i = 0; i < newNodes.length; i++)
                     {
                         var node = newNodes[i];
-                        if(node.id === TABLES_ID)
-                            applyToTable(node);
+                        if(node.id === TAB_CONTENT_ID) {
+                            var children = node.children;
+                            for(var j = 0; j < children.length; j++) {
+                                var child = children[j];
+                                if(child.id == TABLES_ID)
+                                    applyToTable(child);
+                            }
+                        }
                     }
                 }
             }
@@ -119,7 +125,7 @@ function applyList()
         return;
     }
 
-    var mainContent = document.getElementById(MAIN_CONTENT_ID).children;
+    var mainContent = document.getElementById(TAB_CONTENT_ID).children;
     for(var i = 0; i < mainContent.length; i++)
     {
         var table = mainContent[i];
