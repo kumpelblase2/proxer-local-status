@@ -33,7 +33,7 @@ function applyToInfoTable(inInfoTable)
                 if(chrome.runtime.lastError) {
                     alert('There was an error saving to storage: ' + runtime.lastError);
                 } else {
-                    applyToTable(inInfoTable);
+                    applyToInfoTable(inInfoTable);
                 }
             });
         };
